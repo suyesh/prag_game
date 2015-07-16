@@ -6,6 +6,7 @@ player3 = "moe"
 health3 = 100
 player4 ="shemp"
 health4 = 90
+current_time = Time.new
 
 
 puts "#{player1.capitalize}'s health is #{health1}"
@@ -23,3 +24,7 @@ puts "Curly: #{health2}"
 puts "#{player3.capitalize} has a health of #{health3}.".center(50, '*')
 
 puts "#{player4.capitalize.ljust(30, '.')} #{health4} health"
+
+formatted_time = current_time.strftime("%A %m/%d/%y %I:%M%p")
+
+puts "The game started on #{formatted_time}"
