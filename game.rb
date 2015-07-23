@@ -1,4 +1,6 @@
 require_relative 'player'
+require_relative 'die'
+require_relative 'game_turn'
 
 class Game
 	attr_reader :title
@@ -17,8 +19,7 @@ class Game
 			puts player
 		end
 		@players.each do |player|
-			player.w00t
-			player.blam
+			GameTurn.take_turn(player)
 			puts player
 		end
 	end

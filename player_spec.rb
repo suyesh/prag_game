@@ -32,4 +32,6 @@ describe Player do
     @player.blam
     expect(@player.health).to eq(140)
   end
+
+  
 end
